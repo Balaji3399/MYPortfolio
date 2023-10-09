@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio/ContactMe</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/d63b211e4f.js" crossorigin="anonymous"></script>
+    <style>
+        .random-dots{
+            height: 100vh;
+        }
+
+        /* Styles for larger screens */
+.get-in-touch {
+    text-align: center;
+    padding: 20px;
+}
+
+.get-in-touch p {
+    margin: 10px 0;
+}
+
+.contact-form {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    
+    .get-in-touch p {
+        font-size: 14px;
+    }
+
+    .contact-form{
+        padding: 0;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 580px) {
+    .get-in-touch h1 {
+        font-size: 24px;
+    }
+
+    .contact-form {
+        margin: 10px;
+        padding: 0;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 360px){
+    body{
+        margin-left: 5px ;
+    }
+    .contact-form {
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+    .contact-form .form-group{
+        justify-content: space-evenly;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="random-dots"></div>
+    <script id="replace_with_navbar"></script>
+
+    <div class="get-in-touch">
+        <h1><span class="special">Get In Touch</span></h1>
+        <p><i class="fa-solid fa-phone-flip"></i>Phone: +91 8309240976 <br> <i class="fa-regular fa-envelope"></i>Email : abalaji374@gmail.com</p>
+        <p><i class="fa-solid fa-location-dot"></i>Kadiri , Sri Satya Sai District , Andhra Pradesh , <span class="special">India</span>.</p>
+    </div>
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="mailto:abalaji374@gmail.com" method="POST">
+            <div class="form-group">
+                <label for="">Your Name : </label>
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="">Email : </label>
+                <input type="email" name="" id="" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <label for="">Message :</label>
+                <textarea name="" id="" cols="23" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button class="button" type="reset">Reset</button>
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+    <script id="replace_with_footer"></script>
+</body>
+</html>

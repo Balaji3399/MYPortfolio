@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/d63b211e4f.js" crossorigin="anonymous"></script>
+    <style>
+    /* Media query for responsiveness */
+    @media screen and (max-width: 768px) {
+        .main {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .name {
+            order: 2;
+            margin-top: 20px;
+        }
+    
+        .image {
+            order: 1;
+            margin-bottom: 20px;
+        }
+    
+        .my-image {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .intro {
+            flex-direction: column; /* Change to row */
+        }
+    
+        .intro-my-self,
+        .intro-image {
+            width: 50%; /* Set to 50% to maintain side-by-side layout */
+        }
+        
+        /* Media query for responsiveness */
+        .footer {
+            text-align: center;
+            margin: 500px 10px 10px 90px;
+            
+        }
+
+        .footer ul {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .footer li {
+            margin: 0 10px;
+        }
+}
+    @media screen and (max-width:400px) {
+        .footer{
+            margin: 700px 10px 10px 90px;
+        }
+    }
+    
+    
+
+    </style>
+
+</head>
+<body>
+    <div class="random-dots"></div>
+    <script id="replace_with_navbar"></script>
+
+    <div class="main">
+        <div class="name">
+            <h1><i>Hey There! 👋🏻 <br> I'm </i><span class="special">ANABALA BALAJI</span></h1>
+            <span class="special"><h1 class="dynamic-names" style="color: green; margin-top:50px;"></h1></span>
+
+        </div>
+        <div  class="image">
+            <img id="follow-image" class="my-image" src="./images/profile.png" alt="my-image">
+        </div>
+
+    </div>
+
+    <h2><hr></h2>
+
+    <div class="intro">
+        <div class="intro-my-self">
+            <h1><i>Let Me </i><span class="special">INTRODUCE </span> <i>Myself</i></h1>
+            <p><i>I Love Programming and I think I have learnt atleast something about it .🤷‍♂️
+                <br>
+                I am familiar with : <span class="special"><i><b>C , Python , HTML5 , CSS , JAVASCRIPT ...</b></i></span>
+                <br>
+                My field of Interest's are building new <span class="special"><i><b> Web Technologies and Products </b></i></span> and also in areas related to <span style="color: rgb(218, 4, 218);"><i><b>Data Science</b></i></span>.
+                <br>
+                Currently I am learning about different frameworks like : <span class="special"><i><b>React.js , Node.js , Express.js ...</b></i></span></i>
+            </p>
+        </div>
+        <div class="intro-image">
+            <img src="https://media4.giphy.com/media/O4FvfcdZ5tipRWZtki/giphy.gif?cid=ecf05e47q1p8xg63day4ip3yl74elkgpga8qxn0n47romfdt&rid=giphy.gif&ct=s" alt="intro-image">
+        </div>
+    </div>
+
+    <div class="footer">
+      <h2>Find Me On:</h2>
+      <ul type="none">
+        <li><a href="https://www.instagram.com/abalaji374/" target="_blank"><span class="socio-icon" style="color:cornsilk;"><i class="fa-brands fa-instagram"></i></span></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100048817068113" target="_blank"><span class="socio-icon" style="color:cornsilk"><i class="fa-brands fa-facebook"></i></span></a></li>
+        <li><a href="https://github.com/Balaji3399" target="_blank"><span class="socio-icon" style="color: cornsilk"><i class="fa-brands fa-github"></i></span></a></li>
+        <li><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><span class="socio-icon" style="color: cornsilk"><i class="fa-brands fa-square-twitter"></i></span></a></li>
+      </ul>
+    </div>
+
+    <script id="replace_with_footer"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
